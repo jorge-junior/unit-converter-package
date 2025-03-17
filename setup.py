@@ -3,19 +3,17 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as f:
     page_description = f.read()
 
-with open("requirements.txt") as f:
-    requirements = f.read().splitlines()
-
 setup(
-    name="package_name",
-    version="0.0.1",
-    author="my_name",
-    author_email="my_email",
-    description="My short description",
+    name="minimal_unit_converter",
+    version="0.0.2",
+    author="Jorge Junior",
+    author_email="juniorjorge0375@gmail.com",
+    description="Meu primeiro pacote em python",
     long_description=page_description,
     long_description_content_type="text/markdown",
-    url="my_github_repository_project_link"
+    url="https://github.com/jorge-junior/unit-converter-package",
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=[],
     python_requires='>=3.8',
+    keywords=['python', 'first package']
 )
